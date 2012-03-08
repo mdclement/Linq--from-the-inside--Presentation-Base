@@ -7,16 +7,16 @@ namespace Edulinq
 {
     public static partial class Enumerable
     {
-        public static IEnumerable<TResult> Select<TSource, TResult>(
+        public static IEnumerable<TSource> Where<TSource>(
             this IEnumerable<TSource> source,
-            Func<TSource, TResult> selector)
+            Func<TSource, bool> predicate)
         {
             throw new NotImplementedException();
         }
 
-        public static IEnumerable<TResult> Select<TSource, TResult>(
+        public static IEnumerable<TSource> Where<TSource>(
             this IEnumerable<TSource> source,
-            Func<TSource, int, TResult> selector)
+            Func<TSource, int, bool> predicate)
         {
             throw new NotImplementedException();
         }
