@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Edulinq.UnitTest
+namespace Edulinq
 {
-    public class Class1
+    public static partial class Enumerable
     {
     }
 }
