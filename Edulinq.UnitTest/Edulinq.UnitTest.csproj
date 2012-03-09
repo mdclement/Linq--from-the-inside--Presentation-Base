@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeferredExectution.cs" />
+    <Compile Include="EmptyTests.cs" />
+    <Compile Include="Int32Extensions.cs" />
+    <Compile Include="RangeTests.cs" />
     <Compile Include="SelectTests.cs" />
     <Compile Include="TestExtensions.cs" />
     <Compile Include="ThrowingEnumerable.cs" />
@@ -53,6 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Edulinq\Edulinq.csproj">
+      <Project>{096580F3-0511-4FC1-8189-4753379DA350}</Project>
+      <Name>Edulinq</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
