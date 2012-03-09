@@ -13,25 +13,25 @@ namespace Edulinq.UnitTests
         [Test]
         public void SimpleRepeat()
         {
-            System.Linq.Enumerable.Repeat("foo", 3).AssertSequenceEqual("foo", "foo", "foo");
+            Enumerable.Repeat("foo", 3).AssertSequenceEqual("foo", "foo", "foo");
         }
 
         [Test]
         public void EmptyRepeat()
         {
-            System.Linq.Enumerable.Repeat("foo", 0).AssertSequenceEqual();
+            Enumerable.Repeat("foo", 0).AssertSequenceEqual();
         }
 
         [Test]
         public void NullElement()
         {
-            System.Linq.Enumerable.Repeat<string>(null, 2).AssertSequenceEqual(null, null);
+            Enumerable.Repeat<string>(null, 2).AssertSequenceEqual(null, null);
         }
 
         [Test]
         public void NegativeCount()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() => System.Linq.Enumerable.Repeat("foo", -1));
+            Assert.Throws<ArgumentOutOfRangeException>(() => Enumerable.Repeat("foo", -1));
         }
     }
 }
