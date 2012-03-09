@@ -6,33 +6,27 @@ namespace Edulinq
 {
     public static partial class Enumerable
     {
-        public static IEnumerable<TResult> Select<TSource, TResult>(
-            this IEnumerable<TSource> source,
-            Func<TSource, TResult> selector)
+        public static bool Any<TSource>(
+            this IEnumerable<TSource> source)
         {
             if (source == null)
             {
                 throw new ArgumentNullException("source");
             }
-            if (selector == null)
-            {
-                throw new ArgumentNullException("selector");
-            }
-
             throw new NotImplementedException();
         }
 
-        public static IEnumerable<TResult> Select<TSource, TResult>(
+        public static bool Any<TSource>(
             this IEnumerable<TSource> source,
-            Func<TSource, int, TResult> selector)
+            Func<TSource, bool> predicate)
         {
             if (source == null)
             {
                 throw new ArgumentNullException("source");
             }
-            if (selector == null)
+            if (predicate == null)
             {
-                throw new ArgumentNullException("selector");
+                throw new ArgumentNullException("predicate");
             }
 
             throw new NotImplementedException();

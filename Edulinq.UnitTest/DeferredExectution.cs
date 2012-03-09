@@ -5,6 +5,8 @@ using NUnit.Framework;
 
 namespace Edulinq.UnitTests
 {
+    using System.Linq;
+
     [TestFixture]
     public class DeferredExectution
     {
