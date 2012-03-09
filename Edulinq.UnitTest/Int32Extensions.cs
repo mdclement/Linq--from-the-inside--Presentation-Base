@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace Edulinq.UnitTest
+namespace Edulinq.UnitTests
 {
     /// <summary>
     /// Simple class to let us convert an Int32 to a string using the invariant culture,

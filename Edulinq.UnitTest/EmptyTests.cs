@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
 
-namespace Edulinq.UnitTest
+namespace Edulinq.UnitTests
 {
     using System.Linq;
 
@@ -13,7 +13,7 @@ namespace Edulinq.UnitTest
         [Test]
         public void EmptyContainsNoElements()
         {
-            using (var empty = Enumerable.Empty<int>().GetEnumerator())
+            using (var empty = System.Linq.Enumerable.Empty<int>().GetEnumerator())
             {
                 Assert.IsFalse(empty.MoveNext());
             }
@@ -22,13 +22,13 @@ namespace Edulinq.UnitTest
         [Test]
         public void EmptyIsASingletonPerElementType()
         {
-            Assert.AreSame(Enumerable.Empty<int>(), Enumerable.Empty<int>());
-            Assert.AreSame(Enumerable.Empty<long>(), Enumerable.Empty<long>());
-            Assert.AreSame(Enumerable.Empty<string>(), Enumerable.Empty<string>());
-            Assert.AreSame(Enumerable.Empty<object>(), Enumerable.Empty<object>());
+            Assert.AreSame(System.Linq.Enumerable.Empty<int>(), System.Linq.Enumerable.Empty<int>());
+            Assert.AreSame(System.Linq.Enumerable.Empty<long>(), System.Linq.Enumerable.Empty<long>());
+            Assert.AreSame(System.Linq.Enumerable.Empty<string>(), System.Linq.Enumerable.Empty<string>());
+            Assert.AreSame(System.Linq.Enumerable.Empty<object>(), System.Linq.Enumerable.Empty<object>());
 
-            Assert.AreNotSame(Enumerable.Empty<long>(), Enumerable.Empty<int>());
-            Assert.AreNotSame(Enumerable.Empty<string>(), Enumerable.Empty<object>());
+            Assert.AreNotSame(System.Linq.Enumerable.Empty<long>(), System.Linq.Enumerable.Empty<int>());
+            Assert.AreNotSame(System.Linq.Enumerable.Empty<string>(), System.Linq.Enumerable.Empty<object>());
         }
     }
 }

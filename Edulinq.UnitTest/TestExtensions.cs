@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
 
-namespace Edulinq.UnitTest
+namespace Edulinq.UnitTests
 {
     public static class TestExtensions
     {

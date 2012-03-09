@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
 
-namespace Edulinq.UnitTest
+namespace Edulinq.UnitTests
 {
-    using System.Linq;
-
     [TestFixture]
     public class DeferredExectution
     {
