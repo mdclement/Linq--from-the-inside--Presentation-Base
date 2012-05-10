@@ -13,10 +13,7 @@ namespace Edulinq
             {
                 throw new ArgumentNullException("source");
             }
-            using (IEnumerator<TSource> iterator = source.GetEnumerator())
-            {
-                return iterator.MoveNext() ? iterator.Current : default(TSource);
-            }
+            throw new NotImplementedException();
         }
 
         public static TSource FirstOrDefault<TSource>(
@@ -31,14 +28,7 @@ namespace Edulinq
             {
                 throw new ArgumentNullException("predicate");
             }
-            foreach (TSource item in source)
-            {
-                if (predicate(item))
-                {
-                    return item;
-                }
-            }
-            return default(TSource);
+            throw new NotImplementedException();
         }
 
     }
